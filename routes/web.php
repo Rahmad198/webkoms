@@ -47,7 +47,7 @@ Route::controller(DashboardController::class)->name('landing.')->prefix('landing
 
 Route::get('/publikasi',[ViewController::class, 'publikasi']);
 Route::get('/detailpublikasi',[ViewController::class, 'detailpublikasi'])->name('view.detailpublikasi');
-Route::get('/publikasi/{id}',[DashboardController::class, 'getDetailpublikasi'])->name('dashboard.detailpublikasi');
+Route::get('/publikasi/detail/{id}',[DashboardController::class, 'getDetailpublikasi'])->name('dashboard.detailpublikasi');
 Route::get('/berita',[ViewController::class, 'berita']);
 Route::get('/berita/{id}',[DashboardController::class, 'getDetailberita'])->name('dashboard.detailberita');
 Route::get('/databasekader',[ViewController::class, 'databasekader']);

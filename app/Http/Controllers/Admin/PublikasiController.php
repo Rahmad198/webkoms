@@ -15,7 +15,7 @@ class PublikasiController extends Controller
 
     public function tambah()
     {
-    
+
     $publikasi = \App\Models\Publikasi::all();
     return view('back.publik.tambah', ['publikasi' => $publikasi]);
     }

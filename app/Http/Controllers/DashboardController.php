@@ -44,7 +44,6 @@ class DashboardController extends Controller
     public function getDetailpublikasi(Request $request)
     {
         $id = $request->id;
-
         $publikasi = Publikasi::find($id)->toArray();
 
         $publikasi['created_at'] = Carbon::parse($publikasi['created_at'])->format('d-m-Y');
