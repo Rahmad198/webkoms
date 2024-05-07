@@ -61,10 +61,10 @@ class DashboardController extends Controller
         }
         return $berita;
     }
-    public function getDetailberita (Request $request)
+
+    public function getDetailberita(Request $request)
     {
         $id = $request->id;
-
         $berita = Berita::find($id)->toArray();
 
         $berita['created_at'] = Carbon::parse($berita['created_at'])->format('d-m-Y');

@@ -35,7 +35,7 @@ class AnggotaController extends Controller
 
             $image = $request->file('foto');
             if (!empty($image)) {
-                $request->image = $request->nama_lengkap . '-foto.' . $image->getClientOriginalExtension();
+                $request->image = $request->nama_lengkap . $image->getClientOriginalExtension();
                 $image->move(public_path('storage/anggota/'), $request->image);
             }
 

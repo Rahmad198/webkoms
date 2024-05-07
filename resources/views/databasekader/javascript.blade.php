@@ -33,10 +33,12 @@
                             <div class="min-w-[232px] bg-white drop-shadow-[0_0px_8px_rgba(0,0,0,0.25)] rounded-[32px] p-3 flex flex-col">
                                 <br>
                                 <div class="mx-auto mb-5 d-flex" style="width: 200px; height: 200px; background-image: url('${url}'); background-repeat: no-repeat; background-size: contain; background-position: center;"></div>
-                                <h4 class="text-center text-black fw-bold fs-3">${value.nama_lengkap}</h4>
-                                <span class="text-center text-black fw-semibold fs-3 pt-3">${value.jurusan}</span>
+                                <h4 class="text-center text-black fw-bold fs-3">${value.nama_lengkap.substring(0, 25)}</h4>
+                                <span class="text-center text-black fs-4 pt-3">${value.jurusan}</span>
                                 <br>
-                                <a href="/anggota/${value.id}" onclick="getDetailanggota(${value.id})" class="col-xl-3 btn btn-success btn-sm">Detail</a>
+                                <div class="text-center">
+                                    <a href="/anggota/${value.id}" onclick="getDetailanggota(${value.id})" class="btn btn-success btn-sm">Detail</a>
+                                </div>
                                 <br>
                             </div>
                         </div>
@@ -73,10 +75,12 @@
                             <div class="min-w-[232px] bg-white drop-shadow-[0_0px_8px_rgba(0,0,0,0.25)] rounded-[32px] p-3 flex flex-col">
                                 <br>
                                 <div class="mx-auto mb-5 d-flex" style="width: 200px; height: 200px; background-image: url('${url}'); background-repeat: no-repeat; background-size: contain; background-position: center;"></div>
-                                <h4 class="text-center text-black fw-bold fs-3">${value.nama_lengkap}</h4>
-                                <span class="text-center text-black fw-semibold fs-3 pt-3">${value.jurusan}</span>
+                                <h4 class="text-center text-black fw-bold fs-3">${value.nama_lengkap.substring(0, 20)}</h4>
+                                <span class="text-center text-black fs-4 pt-3">${value.jurusan}</span>
                                 <br>
-                                <a href="/anggota/${value.id}" onclick="getDetailanggota(${value.id})" class="col-xl-3 btn btn-success btn-sm">Detail</a>
+                                <div class="text-center">
+                                    <a href="/anggota/${value.id}" onclick="getDetailanggota(${value.id})" class="btn btn-success btn-sm">Detail</a>
+                                </div>
                                 <br>
                             </div>
                         </div>

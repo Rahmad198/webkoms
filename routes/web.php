@@ -9,7 +9,6 @@ use App\Http\Controllers\Admin\PublikasiController;
 use App\Http\Controllers\Admin\BeritaController;
 use App\Http\Controllers\Admin\ArsipController;
 use App\Http\Controllers\DashboardController;
-// use App\Http\Controllers\PencarianPublikasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,12 +45,11 @@ Route::controller(DashboardController::class)->name('landing.')->prefix('landing
 });
 
 Route::get('/publikasi',[ViewController::class, 'publikasi']);
-Route::get('/detailpublikasi',[ViewController::class, 'detailpublikasi'])->name('view.detailpublikasi');
 Route::get('/publikasi/detail/{id}',[DashboardController::class, 'getDetailpublikasi'])->name('dashboard.detailpublikasi');
 Route::get('/berita',[ViewController::class, 'berita']);
-Route::get('/berita/{id}',[DashboardController::class, 'getDetailberita'])->name('dashboard.detailberita');
+Route::get('/berita/detail/{id}',[DashboardController::class, 'getDetailberita'])->name('dashboard.detailberita');
 Route::get('/databasekader',[ViewController::class, 'databasekader']);
-Route::get('/datakader/{id}',[DashboardController::class, 'getDetaildatabasekader'])->name('dashboard.detaildatabasekader');
+Route::get('/databasekader/detail/{id}',[DashboardController::class, 'getDetaildatabasekader'])->name('dashboard.detaildatabasekader');
 Route::get('/kontak',[ViewController::class, 'kontak']);
 
 Route::prefix('admin')->group(function(){

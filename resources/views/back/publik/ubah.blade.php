@@ -20,9 +20,8 @@
                 <form action="/publikasi/{{ $publikasi->id }}/update" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('PUT')
-
                     <div class="form-group">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label for="inputJudul">Judul</label>
                             <input name="judul" type="text" class="form-control" id="inputJudul" placeholder="Judul"
                                 value="{{ $publikasi->judul }}">
@@ -38,14 +37,14 @@
                     </div>
                     <input type="hidden" name="current_foto" value="{{ $publikasi->foto }}">
                     <div class="form-group">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label for="inputPenulis">Penulis</label>
                             <input name="penulis" type="text" class="form-control" id="inputPenulis" name="penulis"
                                 placeholder="Penulis" value="{{ $publikasi->penulis }}">
                         </div>
                     </div>
                     <div class="form-group">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-12">
                             <label for="inputTulisan">Tulisan</label>
                             <textarea name="tulisan" type="text" class="form-control" id="inputTulisan" rows="3" placeholder="Tulisan">{{ $publikasi->tulisan }}</textarea>
                         </div>

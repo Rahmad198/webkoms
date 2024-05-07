@@ -13,7 +13,6 @@
             </div>
         @endif
         <!-- End Page Content -->
-        <!-- End of Main Content -->
         <div class="container">
             <div class="modal-body">
                 <form action="/publikasi/create" method="post" enctype="multipart/form-data">

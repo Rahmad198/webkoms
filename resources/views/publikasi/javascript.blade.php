@@ -41,7 +41,7 @@
                                         <strong class="bi bi-tag me-3"></strong>
                                         <span>Publik</span>
                                     </small>
-                                    <h5 class="card-title py-5">${value.judul}</h5>
+                                    <h5 class="card-title py-5">${value.judul.substring(0, 50)}</h5>
                                     <h5 class="card-title">Oleh: ${value.penulis}</h5>
                                     <a href="/publikasi/detail/${value.id}" onclick="getDetailpublikasi(${value.id})" class="btn btn-success">Selengkapnya</a>
                                 </div>

@@ -20,6 +20,11 @@ class ViewController extends Controller
         return view('publikasi.publikasi');
     }
 
+    public function detailpublikasi()
+    {
+        return view('publikasi.detailpublikasi');
+    }
+
     public function berita()
     {
         return view('berita.berita');
@@ -28,10 +33,7 @@ class ViewController extends Controller
     {
         return view('databasekader.databasekader');
     }
-    public function getdetailpublikasi()
-    {
-        return view('publikasi.detailpublikasi');
-    }
+
     public function anggota()
     {
         return view('anggota');
