@@ -31,6 +31,14 @@ class DashboardController extends Controller
         return $anggota;
     }
 
+    public function getDetailkader(Request $request)
+    {
+        $id = $request->id;
+        $anggota = Anggota::find($id)->toArray();
+
+        return view('databasekader.detailkader', ['anggota' => $anggota]);
+    }
+
     public function getPublikasi(Request $request)
     {
         if($request->search){

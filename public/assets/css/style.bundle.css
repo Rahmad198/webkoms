@@ -603,6 +603,24 @@ progress {
     max-width: 300px;       /* Batasi lebar maksimum elemen */
 }
 
+.hero__1 {
+    position: relative;
+    height: 65vh;
+    min-height: 280px;
+  }
+  .hero__1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../media/svg/illustrations/latar.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.99;
+    z-index: -1;
+  }
 
 .custom-background {
     background-size: cover;

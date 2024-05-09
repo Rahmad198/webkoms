@@ -38,7 +38,7 @@ Route::get('/arsip', function () {
 });
 
 Route::controller(DashboardController::class)->name('landing.')->prefix('landing')->group(function () {
-    $route = array('getStruktural','getPublikasi','getDetailpublikasi','getBerita','getAnggota', 'getArsip');
+    $route = array('getStruktural','getPublikasi','getDetailpublikasi', 'getDetailberita', 'getDetailkader','getBerita','getAnggota', 'getArsip');
     foreach ($route as $route) {
         Route::any($route=='index'?'':'/'.$route, $route)->name($route);
     }
@@ -49,7 +49,7 @@ Route::get('/publikasi/detail/{id}',[DashboardController::class, 'getDetailpubli
 Route::get('/berita',[ViewController::class, 'berita']);
 Route::get('/berita/detail/{id}',[DashboardController::class, 'getDetailberita'])->name('dashboard.detailberita');
 Route::get('/databasekader',[ViewController::class, 'databasekader']);
-Route::get('/databasekader/detail/{id}',[DashboardController::class, 'getDetaildatabasekader'])->name('dashboard.detaildatabasekader');
+Route::get('/detailkader/detail/{id}',[DashboardController::class, 'getDetailkader'])->name('dashboard.detailkader');
 Route::get('/kontak',[ViewController::class, 'kontak']);
 
 Route::prefix('admin')->group(function(){

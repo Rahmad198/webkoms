@@ -43,7 +43,7 @@
                                     </small>
                                     <h5 class="card-title py-5">${value.judul}</h5>
                                     <p class="card-text">Oleh: ${value.penulis}</p>
-                                    <a href="/berita/${value.id}" onclick="getDetailberita(${value.id})" class="btn btn-success">Selengkapnya</a>
+                                    <a href="/berita/detail/${value.id}" onclick="getDetailberita(${value.id})" class="btn btn-success" style="background-color: #435939">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                                         <span>Publik</span>
                                     </small>
                                     <h5 class="card-text py-5">${value.judul.substring(0, 50)}</h5>
-                                    <a href="/berita/${value.id}" onclick="getDetailberita(${value.id})" class="btn btn-success">Selengkapnya</a>
+                                    <a href="/berita/detail/${value.id}" onclick="getDetailberita(${value.id})" class="btn btn-success" style="background-color: #435939">Selengkapnya</a>
                                 </div>
                             </div>
                         </div>

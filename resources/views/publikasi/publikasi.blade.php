@@ -5,6 +5,8 @@
     <div class="landing-dark-bg pt-20 w-100 min-h-350px min-h-lg-500px px-9">
         <h1 class="text-center text-black lh-base fw-bold fs-2x mt-8">PUBLIKASI KADER
         </h1>
+        <h3 class="text-center text-black lh-base fw-bold ">(MELIPUTI TULISAN, PUISI, KEGIATAN DAN SEGALA BENTUK KARYA KADER)
+        </h3>
         <!--begin::Row-->
         <div class="row">
             <div class="col-md-8 offset-md-2 pt-5">

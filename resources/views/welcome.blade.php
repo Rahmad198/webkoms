@@ -8,15 +8,16 @@
             <!--begin::Row-->
             <div class="row w-100 gy-10 ms-10 pt-19">
                 <!--begin::Col-->
-                <div class="col-xl-6 ms-lg-20 d-flex flex-column align-items-stretch justify-content-center" >
-                    <h3 class="col-xl-9" style="font-size: 30px; color: #ffffff; background-color: rgba(67, 89, 57, 0.5);">LET'S UPGRADE YOUR KNOWLEDGE AND
-                        SKILLS WITH <u>HMI</u></h3>
-                    <br>
-                    <h2 class="text-white col-xl-9" style="background-color: rgba(67, 89, 57, 0.5); font-style: italic;">ASSOCIATION OF UNIVERSITY STUDENTS</h2>
+                <div class="col-xl-6 ms-lg-20 d-flex flex-column align-items-stretch justify-content-center">
+                    <div class="row">
+                        <h3 class="col-xl-9" style="font-size: 30px; color: #ffffff;">LET'S UPGRADE YOUR KNOWLEDGE AND
+                            SKILLS WITH <u>HMI</u></h3>
+                        <br>
+                        <h2 class="text-white col-xl-9" style="font-style: italic;">ASSOCIATION OF UNIVERSITY STUDENTS</h2>
+                    </div>
                     <br>
                     <!--end::Col-->
-                    <a style="background-color: #435939" href="https://wa.me/6282131941641/?text=Hello"
-                        class="col-xl-3 btn btn-success text-white">Join Us</a>
+                    <a href="https://wa.me/6282131941641/?text=Hello" class="col-xl-3 btn btn-success text-white" style="background-color: rgba(67, 89, 57, 0.5)">Join Us</a>
                 </div>
                 <!--end::Row-->
                 <!--begin::Col-->
@@ -204,7 +205,7 @@
         </div>
         <!--begin::promosi Section-->
         <!--end::How It Works Section-->
-        <div class="row p-7 justify-content-center">
+        <div class="row p-7 justify-content-center" style="background-image: url('{{ asset('assets/media/svg/illustrations/logo01.png') }}'); background-size: 200px auto; background-position: center; background-repeat: no-repeat;">
             <!-- Earnings (Monthly) Card Example -->
             <div class="col-xl-2 mb-4 me-7" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="card border-left-primary shadow h-100 py-2">

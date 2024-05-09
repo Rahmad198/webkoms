@@ -19,19 +19,19 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="assets/media/logos/logoatas.png" />
+    <link rel="shortcut icon" href="{{ asset('assets/media/logos/logoatas.png') }}" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
     <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-    <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/style.bundle.css"
+    <link rel="stylesheet" href="{{ asset('assets/css/style.bundle.css') }}"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="{{ asset('back/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -47,12 +47,10 @@
         <!--begin::Header Section-->
         <div class="mb-0" id="home">
             <!--begin::Wrapper-->
-            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom custom-background"
-                style="background-image: url(assets/media/svg/illustrations/latar6.jpg); background-size: cover; background-position: center;">
+            <div id="hero1" class="hero__1 bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom custom-background">
                 <!--begin::Header-->
                 <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header"
-                    data-kt-sticky-offset="{default: '200px', lg: '300px'}"
-                    style="background-color: rgba(67, 89, 57, 0.5)">
+                    data-kt-sticky-offset="{default: '200px', lg: '300px'}" style="background-color: rgba(67, 89, 57, 0.5)">
                     <!--begin::Container-->
                     <div class="container">
                         <!--begin::Wrapper-->
@@ -79,9 +77,9 @@
                                 <!--end::Mobile menu toggle-->
                                 <!--begin::Logo image-->
                                 <a href="#">
-                                    <img alt="Logo" src="assets/media/logos/landing.png"
+                                    <img alt="Logo" src="{{ asset('assets/media/logos/landing.png') }}"
                                         class="logo-default h-25px h-lg-30px" />
-                                    <img alt="Logo" src="assets/media/logos/latar11.png"
+                                    <img alt="Logo" src="{{ asset('assets/media/logos/latar11.png') }}"
                                         class="logo-sticky h-20px h-lg-25px" />
                                 </a>
                                 <!--end::Logo image-->
@@ -164,8 +162,7 @@
                             <!--end::Menu wrapper-->
                             <!--begin::Toolbar-->
                             <div class="flex-equal text-end ms-1">
-                                <a href="/admin/login" class="btn btn-success"
-                                    style="background-color: #435939">Login</a>
+                                <a href="/admin/login" class="btn btn-success">Login</a>
                             </div>
                             <!--end::Toolbar-->
                         </div>
@@ -186,7 +183,7 @@
                                 <!--begin::Block-->
                                 <div class=" p mb-10">
                                     <!--begin::Title-->
-                                    <img alt="Logo" src="assets/media/logos/latar1.png"
+                                    <img alt="Logo" src="{{ asset('assets/media/logos/latar1.png') }}"
                                         class="logo-sticky h-lg-40px" />
                                     <!--end::Title-->
                                 </div>
@@ -222,15 +219,15 @@
                                         <!--end::Subtitle-->
                                         <!--begin::Link-->
                                         <a href="https://www.instagram.com/hmikomstekumm" class="mb-6">
-                                            <img src="assets/media/svg/brand-logos/instagram-2-1.svg"
+                                            <img src="{{ asset('assets/media/svg/brand-logos/instagram-2-1.svg') }}"
                                                 class="h-20px me-2" alt="" />
                                             <span class="text-black text-hover-success fs-5 mb-6">Instagram</span>
                                         </a>
                                         <!--end::Link-->
                                         <!--begin::Link-->
                                         <a href="https://www.tiktok.com/@hmikomstekumm" class="mb-6">
-                                            <img src="assets/media/svg/brand-logos/tiktok.svg" class="h-20px me-2"
-                                                alt="" />
+                                            <img src="{{ asset('assets/media/svg/brand-logos/tiktok.svg') }}"
+                                                class="h-20px me-2" alt="" />
                                             <span class="text-black text-hover-success fs-5 mb-6">Tiktok</span>
                                         </a>
                                         <!--end::Link-->
@@ -255,7 +252,7 @@
                             <div class="d-flex align-items-center order-2 order-md-1">
                                 <!--begin::Logo-->
                                 <a href="#">
-                                    <img alt="Logo" src="assets/media/logos/latar1.png"
+                                    <img alt="Logo" src="{{ asset('assets/media/logos/latar1.png') }}"
                                         class="h-15px h-md-20px" />
                                 </a>
                                 <!--end::Logo image-->
@@ -313,24 +310,15 @@
             var hostUrl = "assets/";
         </script>
         <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-        <script src="assets/plugins/global/plugins.bundle.js"></script>
-        <script src="assets/js/scripts.bundle.js"></script>
+        <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
+        <script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
         <!--end::Global Javascript Bundle-->
         <!--begin::Vendors Javascript(used for this page only)-->
-        <script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
-        <script src="assets/plugins/custom/typedjs/typedjs.bundle.js"></script>
+        <script src="{{ asset('assets/plugins/custom/fslightbox/fslightbox.bundle.js') }}"></script>
+        <script src="{{ asset('assets/plugins/custom/typedjs/typedjs.bundle.js') }}"></script>
         <!--end::Vendors Javascript-->
         <!--begin::Custom Javascript(used for this page only)-->
-        <script src="assets/js/custom/landing.js"></script>
-        {{-- <script src="assets/js/custom/pages/pricing/general.js"></script> --}}
-        <!--end::Custom Javascript-->
-        <!--end::Javascript-->
-        <!-- Optional JavaScript; choose one of the two! -->
-
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" --}}
-        {{-- integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script> --}}
+        <script src="{{ asset('assets/js/custom/landing.js') }}"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
         </script>

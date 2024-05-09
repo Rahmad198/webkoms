@@ -81,7 +81,6 @@ class PublikasiController extends Controller
     // Validate and update data
     $request->validate([
         'judul' => 'required|string',
-        'foto' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'penulis' => 'required|string',
         'tulisan' => 'required|string',
     ]);

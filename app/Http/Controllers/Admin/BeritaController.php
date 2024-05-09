@@ -79,7 +79,6 @@ class BeritaController extends Controller
 
     // Validate and update data
     $request->validate([
-        'foto' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'penulis' => 'required|string',
         'judul' => 'required|string',
         'tulisan' => 'required|string',

@@ -37,7 +37,7 @@
                                 <span class="text-center text-black fs-4 pt-3">${value.jurusan}</span>
                                 <br>
                                 <div class="text-center">
-                                    <a href="/anggota/${value.id}" onclick="getDetailanggota(${value.id})" class="btn btn-success btn-sm">Detail</a>
+                                    <a href="/detailkader/detail/${value.id}" onclick="getDetailkader(${value.id})" class="btn btn-success btn-sm" style="background-color: #435939">Detail</a>
                                 </div>
                                 <br>
                             </div>
@@ -79,7 +79,7 @@
                                 <span class="text-center text-black fs-4 pt-3">${value.jurusan}</span>
                                 <br>
                                 <div class="text-center">
-                                    <a href="/anggota/${value.id}" onclick="getDetailanggota(${value.id})" class="btn btn-success btn-sm">Detail</a>
+                                    <a href="/detailkader/detail/${value.id}" onclick="getDetailkader(${value.id})" class="btn btn-success btn-sm" style="background-color: #435939">Detail</a>
                                 </div>
                                 <br>
                             </div>

@@ -72,7 +72,7 @@ class AnggotaController extends Controller
             // Jika ada file gambar yang diunggah, proses dan simpan ke direktori 'fotokader'
             $foto = $request->file('foto');
             $fotoPath = $foto->getClientOriginalName();
-            $foto->move('fotokader/', $fotoPath);
+            $foto->move('storage/anggota', $fotoPath);
         } elseif ($request->has('current_foto') && $request->input('current_foto')) {
             // Jika tidak ada gambar yang diunggah, tetapi ada foto saat ini, gunakan foto saat ini
             $fotoPath = $request->input('current_foto');

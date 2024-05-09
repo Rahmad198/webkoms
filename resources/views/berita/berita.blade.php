@@ -1,25 +1,11 @@
 @extends('master')
 
 @section('content')
-    <div class="landing-dark-bg">
-        <div id="imageDiv" class="text-center text-white lh-base fw-bold fs-3x"
-            style="background-size: cover; background-position: center; padding-top: 100px; padding-bottom: 100px;">
-            BERITA
-        </div>
-
-        <script>
-            var images = ['1.png', '2.png', '3.png']; // List of image file names
-            var currentIndex = 0;
-            var imageDiv = document.getElementById('imageDiv');
-
-            function changeImage() {
-                imageDiv.style.backgroundImage = 'url("assets/media/illustrations/' + images[currentIndex] + '")';
-                currentIndex = (currentIndex + 1) % images.length; // Cycle through the images
-            }
-
-            // Call changeImage function at regular intervals to change the image
-            setInterval(changeImage, 3000); // Change image every 3 seconds
-        </script>
+    <div class="landing-dark-bg pt-20 w-100 min-h-350px min-h-lg-500px px-9">
+        <h1 class="text-center text-black lh-base fw-bold fs-2x mt-8">BERITA
+        </h1>
+        <h3 class="text-center text-black lh-base fw-bold ">(MELIPUTI PEMBERITAAN HMI KOMISARIAT TEKNIK UMM)
+        </h3>
         <!--begin::Row-->
         <div class="row">
             <div class="col-md-8 offset-md-2 pt-5">
@@ -29,7 +15,7 @@
             </div>
         </div>
         <!--end::Row-->
-        <div class="py-lg-2">
+        <div class="py-lg-5">
             <div class="container">
                 <div class="team-container">
                     <div class="mt-12 flex justify-center">
